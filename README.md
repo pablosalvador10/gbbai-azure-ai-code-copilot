@@ -1,18 +1,15 @@
-# Azure AI Solutions Quick Start Template <img src="./utils/images/azure_logo.png" alt="Azure Logo" style="width:30px;height:30px;"/>
+# Azure AI Code Copilot <img src="./utils/images/azure_logo.png" alt="Azure Logo" style="width:30px;height:30px;"/>
 
-Welcome to the Azure AI Solutions Quick Start Template! This repository is designed to be a rapid launchpad for your Azure AI projects. Whether you're working in an enterprise or academic environment, this template integrates best practices to ensure a smooth development journey from start to finish.
+Welcome to the Azure AI Code Copilot Project! This repository is designed to facilitate the development of AI projects using Azure AI services and OpenAI's GPT-4 model.
 
-## 💼 Using this Template: Your Gateway to Advanced AI Development & Collaboration!
 
-- **🔄 Development Workflow**: Get to know our optimized workflow, designed to foster effective collaboration and a focus on product-centric development. See our [CONTRIBUTING GUIDE](./CONTRIBUTING.md) for more details.
+## Project Overview
 
-- **🚀 Advanced AI Development Process**: Understand the specifics of managing Azure AI projects, from issue reporting to pull requests, while adhering to best practices in advanced feature development and complex system troubleshooting.
+This project includes:
 
-- **🔍 Testing & QA for AI Systems**: Learn about the importance of rigorous testing in AI projects and discover efficient development and testing techniques tailored for AI systems with tools like Jupyter Notebooks and `%%ipytest`.
-
-- **🔢 Version & Branching Strategies for AI Projects**: Get to know our versioning system and explore the project’s branching strategy, which ensures smooth transitions between development, staging, and production, especially for AI-driven applications.
-
-- To stay updated with the latest developments and document significant changes to this project, please refer to [CHANGELOG.md](CHANGELOG.md).
+- **Azure AI Integration**: Utilize Azure AI services like OpenAI, Speech AI, and Language Service to build advanced AI applications.
+- **Code Migration with Copilot**: Leverage the power of OpenAI's GPT-3 model to translate code from one programming language to another.
+- **Chatbot Development**: Develop a chatbot using Azure AI services and OpenAI's GPT-3 model.
 
 ## Requirements
 

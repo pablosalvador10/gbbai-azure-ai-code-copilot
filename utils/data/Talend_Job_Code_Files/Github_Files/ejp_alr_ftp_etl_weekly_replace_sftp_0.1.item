@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" internalId="_mymr0HLWEeyAapl91yugzw" name="FILE_DIRECTORY_BATCH" prompt="FILE_DIRECTORY_BATCH?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mymr0XLWEeyAapl91yugzw" name="FILE_DIRECTORY_FEEDS" prompt="FILE_DIRECTORY_FEEDS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6boKBnEeyya6xnkcZjkw" name="FTP_WKH_HOSTNAME" prompt="FTP_WKH_HOSTNAME?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6boaBnEeyya6xnkcZjkw" name="FTP_WKH_PASSWORD" prompt="FTP_WKH_PASSWORD?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6boqBnEeyya6xnkcZjkw" name="FTP_WKH_PORT" prompt="FTP_WKH_PORT?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Oj6bo6BnEeyya6xnkcZjkw" name="FTP_WKH_USERNAME" prompt="FTP_WKH_USERNAME?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bpKBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_DATABASE" prompt="REDSHIFT_CRED_DATABASE?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bpaBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_HOSTNAME" prompt="REDSHIFT_CRED_HOSTNAME?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bpqBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_PASSWORD" prompt="REDSHIFT_CRED_PASSWORD?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bp6BnEeyya6xnkcZjkw" name="REDSHIFT_CRED_PORT" prompt="REDSHIFT_CRED_PORT?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bqKBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_USERNAME" prompt="REDSHIFT_CRED_USERNAME?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bqaBnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_ACCESS_KEY" prompt="S3_WKH_Feeds_S3_ACCESS_KEY?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bqqBnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_BUCKET" prompt="S3_WKH_Feeds_S3_BUCKET?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bq6BnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_SECRET_KEY" prompt="S3_WKH_Feeds_S3_SECRET_KEY?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6brKBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_HOSTNAME" prompt="SFTP_CONNECTION_HOSTNAME?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6braBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_PASSWORD" prompt="SFTP_CONNECTION_PASSWORD?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6brqBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_PORT" prompt="SFTP_CONNECTION_PORT?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Oj6br6BnEeyya6xnkcZjkw" name="SFTP_CONNECTION_USERNAME" prompt="SFTP_CONNECTION_USERNAME?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bsKBnEeyya6xnkcZjkw" name="SFTP_EJP_PATH" prompt="SFTP_EJP_PATH?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bsaBnEeyya6xnkcZjkw" name="SMTP_OVID_HOSTNAME" prompt="SMTP_OVID_HOSTNAME?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bsqBnEeyya6xnkcZjkw" name="SMTP_OVID_PASSWORD" prompt="SMTP_OVID_PASSWORD?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bs6BnEeyya6xnkcZjkw" name="SMTP_OVID_PORT" prompt="SMTP_OVID_PORT?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6btKBnEeyya6xnkcZjkw" name="SMTP_OVID_USERNAME" prompt="SMTP_OVID_USERNAME?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6btaBnEeyya6xnkcZjkw" name="WKH_EMAIL_SUPPORT_From" prompt="WKH_EMAIL_SUPPORT_From?" promptNeeded="false" repositoryContextId="_zvvXoGAOEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6btqBnEeyya6xnkcZjkw" name="WKH_EMAIL_SUPPORT_To" prompt="WKH_EMAIL_SUPPORT_To?" promptNeeded="false" repositoryContextId="_zvvXoGAOEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6bt6BnEeyya6xnkcZjkw" name="wkh_properties" prompt="wkh_properties?" promptNeeded="true" repositoryContextId="_Kh6gMGAVEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_dHn1sAmvEe21JPjs_nlMxA" name="err_msg" prompt="err_msg?" promptNeeded="false" repositoryContextId="_-J3lEAmjEe21JPjs_nlMxA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_18vAoFUHEe2VqP7uTk6BCA" name="sucess_msg" prompt="sucess_msg?" promptNeeded="false" repositoryContextId="_-J3lEAmjEe21JPjs_nlMxA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oox8QFULEe2VqP7uTk6BCA" name="jobname_audit" prompt="jobname_audit?" promptNeeded="false" repositoryContextId="_-J3lEAmjEe21JPjs_nlMxA" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="demo">
+    <contextParameter comment="" internalId="_mymr0nLWEeyAapl91yugzw" name="FILE_DIRECTORY_BATCH" prompt="FILE_DIRECTORY_BATCH?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mymr03LWEeyAapl91yugzw" name="FILE_DIRECTORY_FEEDS" prompt="FILE_DIRECTORY_FEEDS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6buKBnEeyya6xnkcZjkw" name="FTP_WKH_HOSTNAME" prompt="FTP_WKH_HOSTNAME?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj6buaBnEeyya6xnkcZjkw" name="FTP_WKH_PASSWORD" prompt="FTP_WKH_PASSWORD?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CsKBnEeyya6xnkcZjkw" name="FTP_WKH_PORT" prompt="FTP_WKH_PORT?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Oj7CsaBnEeyya6xnkcZjkw" name="FTP_WKH_USERNAME" prompt="FTP_WKH_USERNAME?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CsqBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_DATABASE" prompt="REDSHIFT_CRED_DATABASE?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7Cs6BnEeyya6xnkcZjkw" name="REDSHIFT_CRED_HOSTNAME" prompt="REDSHIFT_CRED_HOSTNAME?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CtKBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_PASSWORD" prompt="REDSHIFT_CRED_PASSWORD?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CtaBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_PORT" prompt="REDSHIFT_CRED_PORT?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CtqBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_USERNAME" prompt="REDSHIFT_CRED_USERNAME?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7Ct6BnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_ACCESS_KEY" prompt="S3_WKH_Feeds_S3_ACCESS_KEY?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CuKBnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_BUCKET" prompt="S3_WKH_Feeds_S3_BUCKET?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CuaBnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_SECRET_KEY" prompt="S3_WKH_Feeds_S3_SECRET_KEY?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CuqBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_HOSTNAME" prompt="SFTP_CONNECTION_HOSTNAME?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7Cu6BnEeyya6xnkcZjkw" name="SFTP_CONNECTION_PASSWORD" prompt="SFTP_CONNECTION_PASSWORD?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CvKBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_PORT" prompt="SFTP_CONNECTION_PORT?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Oj7CvaBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_USERNAME" prompt="SFTP_CONNECTION_USERNAME?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CvqBnEeyya6xnkcZjkw" name="SFTP_EJP_PATH" prompt="SFTP_EJP_PATH?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7Cv6BnEeyya6xnkcZjkw" name="SMTP_OVID_HOSTNAME" prompt="SMTP_OVID_HOSTNAME?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CwKBnEeyya6xnkcZjkw" name="SMTP_OVID_PASSWORD" prompt="SMTP_OVID_PASSWORD?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CwaBnEeyya6xnkcZjkw" name="SMTP_OVID_PORT" prompt="SMTP_OVID_PORT?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CwqBnEeyya6xnkcZjkw" name="SMTP_OVID_USERNAME" prompt="SMTP_OVID_USERNAME?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7Cw6BnEeyya6xnkcZjkw" name="WKH_EMAIL_SUPPORT_From" prompt="WKH_EMAIL_SUPPORT_From?" promptNeeded="false" repositoryContextId="_zvvXoGAOEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CxKBnEeyya6xnkcZjkw" name="WKH_EMAIL_SUPPORT_To" prompt="WKH_EMAIL_SUPPORT_To?" promptNeeded="false" repositoryContextId="_zvvXoGAOEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CxaBnEeyya6xnkcZjkw" name="wkh_properties" prompt="wkh_properties?" promptNeeded="true" repositoryContextId="_Kh6gMGAVEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_dHn1sAmvEe21JPjs_nlMxA" name="err_msg" prompt="err_msg?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_18vAoFUHEe2VqP7uTk6BCA" name="sucess_msg" prompt="sucess_msg?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oox8QFULEe2VqP7uTk6BCA" name="jobname_audit" prompt="jobname_audit?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="RCK">
+    <contextParameter comment="" internalId="_mymr1HLWEeyAapl91yugzw" name="FILE_DIRECTORY_BATCH" prompt="FILE_DIRECTORY_BATCH?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mymr1XLWEeyAapl91yugzw" name="FILE_DIRECTORY_FEEDS" prompt="FILE_DIRECTORY_FEEDS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CxqBnEeyya6xnkcZjkw" name="FTP_WKH_HOSTNAME" prompt="FTP_WKH_HOSTNAME?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7Cx6BnEeyya6xnkcZjkw" name="FTP_WKH_PASSWORD" prompt="FTP_WKH_PASSWORD?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CyKBnEeyya6xnkcZjkw" name="FTP_WKH_PORT" prompt="FTP_WKH_PORT?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Oj7CyaBnEeyya6xnkcZjkw" name="FTP_WKH_USERNAME" prompt="FTP_WKH_USERNAME?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CyqBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_DATABASE" prompt="REDSHIFT_CRED_DATABASE?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7Cy6BnEeyya6xnkcZjkw" name="REDSHIFT_CRED_HOSTNAME" prompt="REDSHIFT_CRED_HOSTNAME?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CzKBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_PASSWORD" prompt="REDSHIFT_CRED_PASSWORD?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CzaBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_PORT" prompt="REDSHIFT_CRED_PORT?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7CzqBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_USERNAME" prompt="REDSHIFT_CRED_USERNAME?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7Cz6BnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_ACCESS_KEY" prompt="S3_WKH_Feeds_S3_ACCESS_KEY?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C0KBnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_BUCKET" prompt="S3_WKH_Feeds_S3_BUCKET?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C0aBnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_SECRET_KEY" prompt="S3_WKH_Feeds_S3_SECRET_KEY?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C0qBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_HOSTNAME" prompt="SFTP_CONNECTION_HOSTNAME?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C06BnEeyya6xnkcZjkw" name="SFTP_CONNECTION_PASSWORD" prompt="SFTP_CONNECTION_PASSWORD?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C1KBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_PORT" prompt="SFTP_CONNECTION_PORT?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Oj7C1aBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_USERNAME" prompt="SFTP_CONNECTION_USERNAME?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C1qBnEeyya6xnkcZjkw" name="SFTP_EJP_PATH" prompt="SFTP_EJP_PATH?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C16BnEeyya6xnkcZjkw" name="SMTP_OVID_HOSTNAME" prompt="SMTP_OVID_HOSTNAME?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C2KBnEeyya6xnkcZjkw" name="SMTP_OVID_PASSWORD" prompt="SMTP_OVID_PASSWORD?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C2aBnEeyya6xnkcZjkw" name="SMTP_OVID_PORT" prompt="SMTP_OVID_PORT?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C2qBnEeyya6xnkcZjkw" name="SMTP_OVID_USERNAME" prompt="SMTP_OVID_USERNAME?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C26BnEeyya6xnkcZjkw" name="WKH_EMAIL_SUPPORT_From" prompt="WKH_EMAIL_SUPPORT_From?" promptNeeded="false" repositoryContextId="_zvvXoGAOEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C3KBnEeyya6xnkcZjkw" name="WKH_EMAIL_SUPPORT_To" prompt="WKH_EMAIL_SUPPORT_To?" promptNeeded="false" repositoryContextId="_zvvXoGAOEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C3aBnEeyya6xnkcZjkw" name="wkh_properties" prompt="wkh_properties?" promptNeeded="true" repositoryContextId="_Kh6gMGAVEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_dHn1sAmvEe21JPjs_nlMxA" name="err_msg" prompt="err_msg?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_18vAoFUHEe2VqP7uTk6BCA" name="sucess_msg" prompt="sucess_msg?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oox8QFULEe2VqP7uTk6BCA" name="jobname_audit" prompt="jobname_audit?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Final_Production">
+    <contextParameter comment="" internalId="_mymr1nLWEeyAapl91yugzw" name="FILE_DIRECTORY_BATCH" prompt="FILE_DIRECTORY_BATCH?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mymr13LWEeyAapl91yugzw" name="FILE_DIRECTORY_FEEDS" prompt="FILE_DIRECTORY_FEEDS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C3qBnEeyya6xnkcZjkw" name="FTP_WKH_HOSTNAME" prompt="FTP_WKH_HOSTNAME?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C36BnEeyya6xnkcZjkw" name="FTP_WKH_PASSWORD" prompt="FTP_WKH_PASSWORD?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C4KBnEeyya6xnkcZjkw" name="FTP_WKH_PORT" prompt="FTP_WKH_PORT?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Oj7C4aBnEeyya6xnkcZjkw" name="FTP_WKH_USERNAME" prompt="FTP_WKH_USERNAME?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C4qBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_DATABASE" prompt="REDSHIFT_CRED_DATABASE?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C46BnEeyya6xnkcZjkw" name="REDSHIFT_CRED_HOSTNAME" prompt="REDSHIFT_CRED_HOSTNAME?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C5KBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_PASSWORD" prompt="REDSHIFT_CRED_PASSWORD?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C5aBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_PORT" prompt="REDSHIFT_CRED_PORT?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C5qBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_USERNAME" prompt="REDSHIFT_CRED_USERNAME?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C56BnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_ACCESS_KEY" prompt="S3_WKH_Feeds_S3_ACCESS_KEY?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C6KBnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_BUCKET" prompt="S3_WKH_Feeds_S3_BUCKET?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C6aBnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_SECRET_KEY" prompt="S3_WKH_Feeds_S3_SECRET_KEY?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C6qBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_HOSTNAME" prompt="SFTP_CONNECTION_HOSTNAME?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C66BnEeyya6xnkcZjkw" name="SFTP_CONNECTION_PASSWORD" prompt="SFTP_CONNECTION_PASSWORD?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C7KBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_PORT" prompt="SFTP_CONNECTION_PORT?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Oj7C7aBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_USERNAME" prompt="SFTP_CONNECTION_USERNAME?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C7qBnEeyya6xnkcZjkw" name="SFTP_EJP_PATH" prompt="SFTP_EJP_PATH?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C76BnEeyya6xnkcZjkw" name="SMTP_OVID_HOSTNAME" prompt="SMTP_OVID_HOSTNAME?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C8KBnEeyya6xnkcZjkw" name="SMTP_OVID_PASSWORD" prompt="SMTP_OVID_PASSWORD?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C8aBnEeyya6xnkcZjkw" name="SMTP_OVID_PORT" prompt="SMTP_OVID_PORT?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C8qBnEeyya6xnkcZjkw" name="SMTP_OVID_USERNAME" prompt="SMTP_OVID_USERNAME?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C86BnEeyya6xnkcZjkw" name="WKH_EMAIL_SUPPORT_From" prompt="WKH_EMAIL_SUPPORT_From?" promptNeeded="false" repositoryContextId="_zvvXoGAOEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C9KBnEeyya6xnkcZjkw" name="WKH_EMAIL_SUPPORT_To" prompt="WKH_EMAIL_SUPPORT_To?" promptNeeded="false" repositoryContextId="_zvvXoGAOEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C9aBnEeyya6xnkcZjkw" name="wkh_properties" prompt="wkh_properties?" promptNeeded="true" repositoryContextId="_Kh6gMGAVEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_dHn1sAmvEe21JPjs_nlMxA" name="err_msg" prompt="err_msg?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_18vAoFUHEe2VqP7uTk6BCA" name="sucess_msg" prompt="sucess_msg?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oox8QFULEe2VqP7uTk6BCA" name="jobname_audit" prompt="jobname_audit?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="Production">
+    <contextParameter comment="" internalId="_mymr2HLWEeyAapl91yugzw" name="FILE_DIRECTORY_BATCH" prompt="FILE_DIRECTORY_BATCH?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_mymr2XLWEeyAapl91yugzw" name="FILE_DIRECTORY_FEEDS" prompt="FILE_DIRECTORY_FEEDS?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C9qBnEeyya6xnkcZjkw" name="FTP_WKH_HOSTNAME" prompt="FTP_WKH_HOSTNAME?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C96BnEeyya6xnkcZjkw" name="FTP_WKH_PASSWORD" prompt="FTP_WKH_PASSWORD?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C-KBnEeyya6xnkcZjkw" name="FTP_WKH_PORT" prompt="FTP_WKH_PORT?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Oj7C-aBnEeyya6xnkcZjkw" name="FTP_WKH_USERNAME" prompt="FTP_WKH_USERNAME?" promptNeeded="false" repositoryContextId="_SqxJkGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C-qBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_DATABASE" prompt="REDSHIFT_CRED_DATABASE?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C-6BnEeyya6xnkcZjkw" name="REDSHIFT_CRED_HOSTNAME" prompt="REDSHIFT_CRED_HOSTNAME?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C_KBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_PASSWORD" prompt="REDSHIFT_CRED_PASSWORD?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C_aBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_PORT" prompt="REDSHIFT_CRED_PORT?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C_qBnEeyya6xnkcZjkw" name="REDSHIFT_CRED_USERNAME" prompt="REDSHIFT_CRED_USERNAME?" promptNeeded="false" repositoryContextId="_XbHIkGAHEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7C_6BnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_ACCESS_KEY" prompt="S3_WKH_Feeds_S3_ACCESS_KEY?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DAKBnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_BUCKET" prompt="S3_WKH_Feeds_S3_BUCKET?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DAaBnEeyya6xnkcZjkw" name="S3_WKH_Feeds_S3_SECRET_KEY" prompt="S3_WKH_Feeds_S3_SECRET_KEY?" promptNeeded="false" repositoryContextId="_5dmCoF9bEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DAqBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_HOSTNAME" prompt="SFTP_CONNECTION_HOSTNAME?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DA6BnEeyya6xnkcZjkw" name="SFTP_CONNECTION_PASSWORD" prompt="SFTP_CONNECTION_PASSWORD?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DBKBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_PORT" prompt="SFTP_CONNECTION_PORT?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Oj7DBaBnEeyya6xnkcZjkw" name="SFTP_CONNECTION_USERNAME" prompt="SFTP_CONNECTION_USERNAME?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DBqBnEeyya6xnkcZjkw" name="SFTP_EJP_PATH" prompt="SFTP_EJP_PATH?" promptNeeded="false" repositoryContextId="_UOnWYGASEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DB6BnEeyya6xnkcZjkw" name="SMTP_OVID_HOSTNAME" prompt="SMTP_OVID_HOSTNAME?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DCKBnEeyya6xnkcZjkw" name="SMTP_OVID_PASSWORD" prompt="SMTP_OVID_PASSWORD?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DCaBnEeyya6xnkcZjkw" name="SMTP_OVID_PORT" prompt="SMTP_OVID_PORT?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DCqBnEeyya6xnkcZjkw" name="SMTP_OVID_USERNAME" prompt="SMTP_OVID_USERNAME?" promptNeeded="false" repositoryContextId="_8nC-QGAIEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DC6BnEeyya6xnkcZjkw" name="WKH_EMAIL_SUPPORT_From" prompt="WKH_EMAIL_SUPPORT_From?" promptNeeded="false" repositoryContextId="_zvvXoGAOEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DDKBnEeyya6xnkcZjkw" name="WKH_EMAIL_SUPPORT_To" prompt="WKH_EMAIL_SUPPORT_To?" promptNeeded="false" repositoryContextId="_zvvXoGAOEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oj7DDaBnEeyya6xnkcZjkw" name="wkh_properties" prompt="wkh_properties?" promptNeeded="true" repositoryContextId="_Kh6gMGAVEeiDIPzt6NbkyA" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_dHn1sAmvEe21JPjs_nlMxA" name="err_msg" prompt="err_msg?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_18vAoFUHEe2VqP7uTk6BCA" name="sucess_msg" prompt="sucess_msg?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Oox8QFULEe2VqP7uTk6BCA" name="jobname_audit" prompt="jobname_audit?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="64"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="true"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="context.wkh_properties"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;:=&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:QHOhofJq1Qsfk7DbOGc5Axs6heeiggCqBv8yCZ50"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Talend_Studio_8/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="JDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9wv2M5NDZz9CvrttrG0vV405r9asMfy+98W4A57o"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_8qwkYFjNEdyj6eiqDt60Og" name="DemoRoutines"/>
+    <routinesParameter id="_HKXfQGIZEd26GZmhFZLTPA" name="GetRandomPhoneNum"/>
+    <routinesParameter id="_26tEEOwaEemGUe1bf0O0pw" name="DataMasking"/>
+    <routinesParameter id="_28hB8OwaEemGUe1bf0O0pw" name="DataQualityDependencies"/>
+    <routinesParameter id="_2-q-EOwaEemGUe1bf0O0pw" name="TalendString"/>
+    <routinesParameter id="_29UTMOwaEemGUe1bf0O0pw" name="Mathematical"/>
+    <routinesParameter id="_29ocQOwaEemGUe1bf0O0pw" name="Numeric"/>
+    <routinesParameter id="_2-QHUOwaEemGUe1bf0O0pw" name="TalendDataGenerator"/>
+    <routinesParameter id="_2-61sOwaEemGUe1bf0O0pw" name="TalendStringUtil"/>
+    <routinesParameter id="_28WC0OwaEemGUe1bf0O0pw" name="DataQuality"/>
+    <routinesParameter id="_290pgOwaEemGUe1bf0O0pw" name="Relational"/>
+    <routinesParameter id="_285ccOwaEemGUe1bf0O0pw" name="DQTechnical"/>
+    <routinesParameter id="_29IF8OwaEemGUe1bf0O0pw" name="DataOperation"/>
+    <routinesParameter id="_2_F00OwaEemGUe1bf0O0pw" name="SQLike"/>
+    <routinesParameter id="_2-c7oOwaEemGUe1bf0O0pw" name="TalendDate"/>
+    <routinesParameter id="_28tPMOwaEemGUe1bf0O0pw" name="DqStringHandling"/>
+    <routinesParameter id="_29_ooOwaEemGUe1bf0O0pw" name="StringHandling"/>
+  </parameters>
+  <node componentName="tFTPGet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPGet_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.SFTP_CONNECTION_HOSTNAME"/>
+    <elementParameter field="TEXT" name="PORT" value="context.SFTP_CONNECTION_PORT"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.SFTP_CONNECTION_USERNAME"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:QM8/EjeusQnVsjdT+uXU+Xe2T04PoMWWfVLXgdErfNUiomK5fiM+bAKHIRhmyUMTUbJ1o4TOZU2PFlfK"/>
+    <elementParameter field="CHECK" name="SFTP" value="true"/>
+    <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:udydjrto1kOJcXSkZDBpro/YjZSh6rWVl2jJ+OWKPb4UuPVm"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:pgftjvsq9Y09kmtVmCh6UMfgluA+41Bth4hEPzXv8itoqlfz"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.FILE_DIRECTORY_FEEDS"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="context.SFTP_EJP_PATH"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="binary"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="size_differ"/>
+    <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;EJP_ALR_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;.zip&quot;"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:NN6/q8bFkdZXAgslxjQHmKhQxlxyESXFr0lAS5wQ"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_MESSAGE" value="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" value="true"/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="true"/>
+    <elementParameter field="TABLE" name="CLIENT_PARAMETERS">
+      <elementValue elementRef="PARAMETER" value="&quot;kex&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1,curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;server_host_key&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;ssh-rsa,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,rsa-sha2-512,rsa-sha2-256&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;cipher.s2c&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;aes128-ctr,aes128-cbc,3des-ctr,3des-cbc,blowfish-cbc,aes192-ctr,aes192-cbc,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes256-gcm@openssh.com&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;cipher.c2s&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;aes128-ctr,aes128-cbc,3des-ctr,3des-cbc,blowfish-cbc,aes192-ctr,aes192-cbc,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes256-gcm@openssh.com&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;mac.s2c&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha1-96,hmac-md5-96,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha2-512&quot;"/>
+      <elementValue elementRef="PARAMETER" value="&quot;mac.c2s&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;hmac-md5,hmac-sha1,hmac-sha2-256,hmac-sha1-96,hmac-md5-96,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,hmac-sha2-512&quot;"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="FTP_from_Orion"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFTPGet_1"/>
+  </node>
+  <node componentName="tFileUnarchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileUnarchive_1"/>
+    <elementParameter field="FILE" name="ZIPFILE" value="context.FILE_DIRECTORY_FEEDS+&quot;EJP_ALR_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;.zip&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.FILE_DIRECTORY_FEEDS"/>
+    <elementParameter field="CHECK" name="ROOTNAME" value="false"/>
+    <elementParameter field="CHECK" name="INTEGRITY" value="false"/>
+    <elementParameter field="CHECK" name="EXTRACTPATH" value="true"/>
+    <elementParameter field="CHECK" name="CHECKPASSWORD" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DECRYPT_METHOD" show="false" value="ZIP4J_DECRYPT"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:MVJBZLrMzhbZwIsMCd/FYpgFEPDrHKTCcidar5lD"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PRINTOUT" value="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
+    <elementParameter field="TEXT" name="ENCORDING" show="false" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRedshiftRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER_VERSION" value="DRIVER_V1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.REDSHIFT_CRED_HOSTNAME"/>
+    <elementParameter field="TEXT" name="PORT" value="context.REDSHIFT_CRED_PORT"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.REDSHIFT_CRED_DATABASE"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;phase2&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="REDSHIFT"/>
+    <elementParameter field="TEXT" name="USER" value="context.REDSHIFT_CRED_USERNAME"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:goKsRdYkPD4HbYfNVibBLCpAXJq2K2JOkYFkd1kq/3dHNFQdoR+iJiIcZ2SZNXbznuKElKyPXImIYA=="/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_STRING_PROPERTIES" show="false" value="false"/>
+    <elementParameter field="TABLE" name="ENTRY_PROPERTIES" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ejp_reg_increment_raw_2&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;&#13;&#10;truncate  phase2.ejp_alr_increment_raw_2;&#13;&#10;copy phase2.ejp_alr_increment_raw_2 from 's3://&quot;+context.S3_WKH_Feeds_S3_BUCKET+&quot;/Acxiom/EJP_ALR_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;.txt' CREDENTIALS 'aws_access_key_id=&quot;+context.S3_WKH_Feeds_S3_ACCESS_KEY+&quot;;aws_secret_access_key=&quot;+context.S3_WKH_Feeds_S3_SECRET_KEY+&quot;' &#13;&#10;DELIMITER AS '|' COMPUPDATE ON ACCEPTINVCHARS MAXERROR as 500 TRUNCATECOLUMNS;&#13;&#10;&#13;&#10;drop table phase2.date_ejp_alr;&#13;&#10;create table phase2.date_ejp_alr as select cast(current_date as varchar(10)) as date_in;&#13;&#10;&#13;&#10;insert into phase2.ejp_alr_date_update&#13;&#10;select '&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;' as date,&#13;&#10;'ejp_alr_'+'&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;' as table_name,&#13;&#10;(select count(*) from phase2.ejp_alr_increment_raw_2) as count;&#13;&#10;&#13;&#10;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="CLOSED_LIST" name="JDBC_URL" value="STANDARD"/>
+    <elementParameter field="TEXT" name="LABEL" value="Load data from S3 to Redshift"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Load table from S3 to Redshift"/>
+    <metadata connector="FLOW" name="tRedshiftRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="FILE" name="FILENAME" show="false" value="context.ACXIOM_LOCAL+&quot;psftp_adv_acr_rename.bat&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Talend/5.4.1/studio/workspace/delete_folder&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="context.FILE_DIRECTORY_FEEDS+&quot;EJP_ALR_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;.txt&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exists or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_1"/>
+  </node>
+  <node componentName="tFileDelete" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_3"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.FILE_DIRECTORY_FEEDS+&quot;EJP_ALR_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;.zip&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" show="false" value="&quot;C:/Talend/5.4.1/studio/workspace/delete_folder&quot;"/>
+    <elementParameter field="TEXT" name="PATH" show="false" value="&quot;C:/Talend/5.4.1/studio/workspace/delete_folder or delete_file&quot;"/>
+    <elementParameter field="CHECK" name="FAILON" value="true"/>
+    <elementParameter field="CHECK" name="FOLDER" value="false"/>
+    <elementParameter field="CHECK" name="FOLDER_FILE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note &quot;CURRENT_STATUS&quot; including:&#10;&quot;File (or path) deleted.&quot;&#10;&quot;No file (or path) deleted.&quot;&#10;&quot;File (or path) does not exists or is invalid.&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileDelete_3"/>
+  </node>
+  <node componentName="tFTPRename" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="128" sizeX="64" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPRename_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.FTP_WKH_HOSTNAME"/>
+    <elementParameter field="TEXT" name="PORT" value="context.FTP_WKH_PORT"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.FTP_WKH_USERNAME"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:+tI6KOt2i9lnd/RqVowaTHZvC1y7DISUl07pWsa+oqOZit+iweTViI8gaHxtwc4U5iaJug=="/>
+    <elementParameter field="CHECK" name="SFTP" value="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:FSYhpTbffIB3oWR/QAsy8/uffEOdj53Cv1hUp5usg8q03unE"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:Q1uU/vGQKykX/9Q2LdeC7/YnzgNIvimmxvLlrtButQXMENTr"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;EJP/&quot;"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="always"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;EJP_ALR_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;.zip&quot;"/>
+      <elementValue elementRef="NEWNAME" value="&quot;EJP_ALR_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;_LOADED.zip&quot;"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:2ZL8Y43PbTlUlr0dfK3t2Oikqf0JNJwIH9fWPQRy"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" value="true"/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" show="false" value="false"/>
+    <elementParameter field="TABLE" name="CLIENT_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="FTP_from_Advantage"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFTPRename_1"/>
+  </node>
+  <node componentName="tS3Put" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tS3Put_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CREDENTIAL_PROVIDER" value="STATIC_CREDENTIALS"/>
+    <elementParameter field="FILE" name="PROFILE_PATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROFILE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" value="context.S3_WKH_Feeds_S3_ACCESS_KEY"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="enc:system.encryption.key.v1:BYc0pUPE6JxBAkUCbXQ2oNrentKyespQhUTn/lfxQUvtcmu5GYBOUP+y6eeoL5ATv41tWnS/bvrfC8AfQB0="/>
+    <elementParameter field="CHECK" name="ASSUME_ROLE" value="false"/>
+    <elementParameter field="TEXT" name="ARN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ROLE_SESSION_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SESSION_DURATION" show="false" value="15"/>
+    <elementParameter field="OPENED_LIST" name="REGION" value="&quot;us-east-1&quot;"/>
+    <elementParameter field="CHECK" name="ENCRYPT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="KEY_TYPE" show="false" value="KMS_CMK"/>
+    <elementParameter field="CLOSED_LIST" name="ALGORITHM_SYMMETRIC_MASTER_KEY" show="false" value="AES"/>
+    <elementParameter field="CLOSED_LIST" name="ALGORITHM_ASYMMETRIC_MASTER_KEY" show="false" value="RSA"/>
+    <elementParameter field="CLOSED_LIST" name="ENCODING" show="false" value="BASE64"/>
+    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY_CMK" show="false" value="enc:system.encryption.key.v1:DTFvb289Fo0aw22HpYnvYhFQ/xEucXqIK6ADVR27"/>
+    <elementParameter field="PASSWORD" name="ENCRYPTED_KEY_BASE64" show="false" value="enc:system.encryption.key.v1:edsvJhJSl7ifKZZ4JL7h1fNmh+z3TA9oRKfLOHco"/>
+    <elementParameter field="FILE" name="ENCRYPTED_KEY_X509" show="false" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="PUBLIC_KEY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="PRIVATE_KEY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="BUCKET" value="context.S3_WKH_Feeds_S3_BUCKET"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;Acxiom/EJP_ALR_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;.txt&quot;"/>
+    <elementParameter field="FILE" name="FILE" value="context.FILE_DIRECTORY_FEEDS+&quot;EJP_ALR_&quot;+TalendDate.getDate(&quot;CCYYMMDD&quot;)+&quot;.txt&quot;"/>
+    <elementParameter field="CHECK" name="ENABLE_SERVER_SIDE_ENCRYPTION" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_KMS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="KMSID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="FILE" name="WEB_IDENTITY_TOKEN_FILE" show="false" value=""/>
+    <elementParameter field="TEXT" name="WEB_TOKEN_ARN" show="false" value=""/>
+    <elementParameter field="TEXT" name="WEB_TOKEN_ROLE_SESSION_NAME" show="false" value=""/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false"/>
+    <elementParameter field="TABLE" name="CLIENT_CONFIGURATION" show="false"/>
+    <elementParameter field="CHECK" name="SET_STS_ENDPOINT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="STS_ENDPOINT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="OPENED_LIST" name="SIGNING_REGION" show="false" value="DEFAULT"/>
+    <elementParameter field="TEXT" name="EXTERNALID" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SERIALNUMBER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TOKENCODE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="TAGS" show="false"/>
+    <elementParameter field="TABLE" name="POLICY_TABLE" show="false"/>
+    <elementParameter field="MEMO" name="POLICY" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="MULTIPART_THRESHOLD" value="5"/>
+    <elementParameter field="TEXT" name="PART_SIZE" value="5"/>
+    <elementParameter field="CHECK" name="ENABLE_ACCELERATE" value="false"/>
+    <elementParameter field="CHECK" name="ACCESS_CONTROL_LIST" value="false"/>
+    <elementParameter field="TABLE" name="ACL" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CANNED_ACCESS_CONTROL_LIST" value="&quot;NONE&quot;"/>
+    <elementParameter field="CHECK" name="ENABLE_OBJECT_LOCK" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="RETENTION_MODE" show="false" value="GOVERNANCE"/>
+    <elementParameter field="TEXT" name="RETENTION_PERIOD" show="false" value="1"/>
+    <elementParameter field="CLOSED_LIST" name="RETENTION_PERIOD_TYPE" show="false" value="DAYS"/>
+    <elementParameter field="CHECK" name="SET_OBJECT_TAGS" value="false"/>
+    <elementParameter field="TABLE" name="OBJECT_TAGS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.WKH_EMAIL_SUPPORT_To"/>
+    <elementParameter field="TEXT" name="FROM" value="context.WKH_EMAIL_SUPPORT_From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Job Fail&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Job Fail -&quot;+jobName"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Error Message -&quot;+((String)globalMap.get(&quot;tFileInputDelimited_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_OVID_HOSTNAME"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_OVID_PORT"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="NO_AUTH"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="context.Ovid_Username"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:4041ApV2DNp3Dr5JxIgzImBzrKEox28AdEVjPJL42BFGDZsBuZzweaFU/pgxDPalSw=="/>
+    <elementParameter field="PASSWORD" name="TOKEN" show="false" value="enc:system.encryption.key.v1:U/y/5JaXjmTgWAldw7QdICuej1kjOpCbr6MztrkoG5Niq63XhGc="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" show="false" value="false"/>
+    <elementParameter field="TABLE" name="CONFIGS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_3"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.WKH_EMAIL_SUPPORT_To"/>
+    <elementParameter field="TEXT" name="FROM" value="context.WKH_EMAIL_SUPPORT_From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Job Fail&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Job Fail -&quot;+jobName"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Error Message -&quot;+((String)globalMap.get(&quot;tFileInputDelimited_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_OVID_HOSTNAME"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_OVID_PORT"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="NO_AUTH"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="context.Ovid_Username"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:AlKBWhpWT7GoRF/RqORDqnyhk9Z6BCUWrULx43Cl+HIbdrYSD1dL5cNSKCzLM+Kwcw=="/>
+    <elementParameter field="PASSWORD" name="TOKEN" show="false" value="enc:system.encryption.key.v1:+7lwFEqK17yPvfkDs4vP0awA9VKX3a4huBwTJcHAVK/bFDibWWk="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" show="false" value="false"/>
+    <elementParameter field="TABLE" name="CONFIGS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.WKH_EMAIL_SUPPORT_To"/>
+    <elementParameter field="TEXT" name="FROM" value="context.WKH_EMAIL_SUPPORT_From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Job Fail&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Job Fail -&quot;+jobName"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Error Message -&quot;+((String)globalMap.get(&quot;tFileInputDelimited_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_OVID_HOSTNAME"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_OVID_PORT"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="NO_AUTH"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="context.Ovid_Username"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:GEmmuqmWxFTa29IbdyUx2FbEcN3Ue5hxmCiCR5KPS5UjoplAR5tu5wrtE90lRL+F4A=="/>
+    <elementParameter field="PASSWORD" name="TOKEN" show="false" value="enc:system.encryption.key.v1:MobGcKx2rsvzaUvzYyKR+p9vAWUUyxDXlqpu88cBHBO6bMCL3+g="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" show="false" value="false"/>
+    <elementParameter field="TABLE" name="CONFIGS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_2"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.WKH_EMAIL_SUPPORT_To"/>
+    <elementParameter field="TEXT" name="FROM" value="context.WKH_EMAIL_SUPPORT_From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Job Fail&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Job Fail -&quot;+jobName"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Error Message -&quot;+((String)globalMap.get(&quot;tFileInputDelimited_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_OVID_HOSTNAME"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_OVID_PORT"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="NO_AUTH"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="context.Ovid_Username"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:3ABZqXsKayBMpmpiNyRYHLncwwxcCwaXCtD7VXW79N4n16iiSQEIOxd978ew2P0Z1w=="/>
+    <elementParameter field="PASSWORD" name="TOKEN" show="false" value="enc:system.encryption.key.v1:TT+ij6oWN58dJ/QeMOnoU6za3086zJG1pj4m3zOJ2jkAlJ0twiw="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" show="false" value="false"/>
+    <elementParameter field="TABLE" name="CONFIGS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_4"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_5"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.WKH_EMAIL_SUPPORT_To"/>
+    <elementParameter field="TEXT" name="FROM" value="context.WKH_EMAIL_SUPPORT_From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Job Fail&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Job Fail -&quot;+jobName"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Error Message -&quot;+((String)globalMap.get(&quot;tFileInputDelimited_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_OVID_HOSTNAME"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_OVID_PORT"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="NO_AUTH"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="context.Ovid_Username"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:Hmmo392NbEGASLjonIWhS4BP6UiVHvMfOHbH+i0GAaBAMnEBbkNno5/YWGVB1uJnow=="/>
+    <elementParameter field="PASSWORD" name="TOKEN" show="false" value="enc:system.encryption.key.v1:Y3T7azGpPGed6MgwrLPY7WY3Xrkw6GTVD1A/AgKNRiFZKxal0Ek="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" show="false" value="false"/>
+    <elementParameter field="TABLE" name="CONFIGS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_5"/>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_6"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="TO" value="context.WKH_EMAIL_SUPPORT_To"/>
+    <elementParameter field="TEXT" name="FROM" value="context.WKH_EMAIL_SUPPORT_From"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="true"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;Job Fail&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Job Fail -&quot;+jobName"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Error Message -&quot;+((String)globalMap.get(&quot;tFileInputDelimited_1_ERROR_MESSAGE&quot;))"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_OVID_HOSTNAME"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_OVID_PORT"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="NO_AUTH"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="context.Ovid_Username"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:WGdfH5a78fvBrGPFvF56aKQz8tjfpJq0g0tQqnSmNc8hkgjRyh3Kq/wgDmczbmW55w=="/>
+    <elementParameter field="PASSWORD" name="TOKEN" show="false" value="enc:system.encryption.key.v1:Bu6lFwpop7vDb/qltEZx8hUp7OSmvgl9Ic0AoIT7DKvoHkIfExM="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" show="false" value="false"/>
+    <elementParameter field="TABLE" name="CONFIGS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_6"/>
+  </node>
+  <node componentName="errorHandling_BIW" componentVersion="0.6" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="errorHandling_BIW_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="errorHandling_BIW"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPGet_1" offsetLabelX="0" offsetLabelY="0" source="tFTPGet_1" target="tFileUnarchive_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFTPGet_1" offsetLabelX="0" offsetLabelY="0" source="tFTPGet_1" target="tSendMail_3">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileUnarchive_1" offsetLabelX="0" offsetLabelY="0" source="tFileUnarchive_1" target="tS3Put_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileUnarchive_1" offsetLabelX="0" offsetLabelY="0" source="tFileUnarchive_1" target="tSendMail_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRedshiftRow_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftRow_1" target="tFileDelete_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRedshiftRow_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftRow_1" target="tSendMail_4">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileDelete_1" offsetLabelX="0" offsetLabelY="0" source="tFileDelete_1" target="tFTPRename_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileDelete_1" offsetLabelX="0" offsetLabelY="0" source="tFileDelete_1" target="tSendMail_6">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError6"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileDelete_3" offsetLabelX="0" offsetLabelY="0" source="tFileDelete_3" target="tFileDelete_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileDelete_3" offsetLabelX="0" offsetLabelY="0" source="tFileDelete_3" target="tSendMail_5">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError5"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tS3Put_1" offsetLabelX="0" offsetLabelY="0" source="tS3Put_1" target="tRedshiftRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tS3Put_1" offsetLabelX="0" offsetLabelY="0" source="tS3Put_1" target="tSendMail_2">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError3"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPGet_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileUnarchive_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRedshiftRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileDelete_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPRename_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tS3Put_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="errorHandling_BIW_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_50541f11-9ec5-46e2-b966-62e753b4a911"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kOZ28QqwWXLpf0oloedK1S0+HCfBG70JI9K7Cs3SzbHIgYuEpZ1TxZ3ijyVG6cD2cdUgPNACAh61&#13;
+iIrLw6y3Ug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_409d3fb6-6aca-4c83-b5fc-022344f8b9b6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GYYjOXbw841pzX4xV+XDQ9ENL+S6RUtHBCznokkI51KlAoxTin8/XO9R0p2rSHjz6lBJ8yCbpm2o&#13;
+t2EDrOh3VQ==</DigestValue></Reference></SignedInfo><SignatureValue>WB4wZ/WvnJjuvzBFDqAXfxvw6fa5AFeRQfifFv356d8+e9i3cBAIvDnAUCrUeP3RW3sZaPLsBz54&#13;
+N0RCLSk2wDglYTBvRa5XyTovSchHQJnG2MbiBfI3QYuDyo2K5W5qLQyEwZRlFAf1fDfjbM0K9jv7&#13;
+un4SDOvA+fwUYGVq3kDWoZVXxne9POAtSbgXjos6ioz41ThS6VxgF+sNP7BaXJePfgansnvmyLYo&#13;
+hTaY486o6m2TW+wBchBBdxRB+fK2KriPLDfnNI1Ng2/6Xc7fwmQeceyswoWVQhx9/kas3lKdgqJ0&#13;
+p6WF1v50H1IOctPD9HplAqzn0UW3mWjVluuL1w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_409d3fb6-6aca-4c83-b5fc-022344f8b9b6" Target="#_50541f11-9ec5-46e2-b966-62e753b4a911"><Timestamp>2024-02-09 13:16:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

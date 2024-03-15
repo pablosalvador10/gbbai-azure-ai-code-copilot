@@ -1,5 +1,4 @@
-PYTHON_INTERPRETER = python3
-CONDA_ENV ?= my-template-environment
+PYTHON_INTERPRETER = python
 export PYTHONPATH=$(PWD):$PYTHONPATH;
 
 # Target for setting up pre-commit and pre-push hooks
@@ -77,3 +76,7 @@ remove_conda_env:
 run_pylint:
 	@echo "Running linter"
 	find . -type f -name "*.py" ! -path "./tests/*" | xargs pylint -disable=logging-fstring-interpolation > utils/pylint_report/pylint_report.txt
+
+run_streamlit:
+	@echo "Running Streamlit application"
+	streamlit run src/Chatbot.py
