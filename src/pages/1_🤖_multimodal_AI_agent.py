@@ -90,7 +90,7 @@ different programming languages.
 
 In this example, we're using `GPT4 Turbo with vision` to demonstrate the multimodality capabilities of the Code Assistant in an interactive Streamlit app.
 
-Explore more examples of the multimodal Code Assistant at [github.com/langchain-ai/streamlit-agent](https://github.com/langchain-ai/streamlit-agent).
+Explore more examples of the multimodal Code Assistant at [pablosalvador10/gbbai-azure-ai-document-intelligence](https://github.com/pablosalvador10/gbbai-azure-ai-document-intelligence).
 """
 
 # About App expander

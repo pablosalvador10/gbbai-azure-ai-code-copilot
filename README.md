@@ -1,85 +1,50 @@
-# Azure AI Code Copilot <img src="./utils/images/azure_logo.png" alt="Azure Logo" style="width:30px;height:30px;"/>
 
-Welcome to the Azure AI Code Copilot Project! This repository is designed to facilitate the development of AI projects using Azure AI services and OpenAI's GPT-4 model.
+# <img src="./utils/images/azure_logo.png" alt="Azure Logo" style="width:30px;height:30px;"/>  Multimodal AI Code Copilot 
 
+Welcome to the Multimodal AI Code Copilot Project! This repository is designed to facilitate the development of code muigration betwen lenguages and platforms using Azure AI services and OpenAI's GPT-4 Turbo Vision model.
 
-## Project Overview
+## 📚 Project Overview
 
 This project includes:
 
-- **Azure AI Integration**: Utilize Azure AI services like OpenAI, Speech AI, and Language Service to build advanced AI applications.
-- **Code Migration with Copilot**: Leverage the power of OpenAI's GPT-3 model to translate code from one programming language to another.
-- **Chatbot Development**: Develop a chatbot using Azure AI services and OpenAI's GPT-3 model.
+- **Multimodal AI Integration**: Utilize the power of OpenAI's GPT-4 Turbo Plus Vision model to understand and translate complex diagrams, workflows, and UML designs. This approach combines text and visual inputs to handle a wide range of tasks and scenarios, making our AI solutions more versatile and effective.
+- **Azure AI Services**: Leverage Azure AI services to build advanced AI applications. These services provide the infrastructure and tools needed to develop, deploy, and manage AI solutions at scale.
+- **Chatbot Development**: Develop a chatbot using Azure AI services and OpenAI's GPT-4 Turbo Plus Vision model. The chatbot can understand and respond to user queries in a natural, conversational manner, providing a user-friendly interface for interacting with the AI system.
 
-## Requirements
 
-> Modify as needed by project 
+## 🚀 Run the app
 
-### Setting Up Azure AI Services
+This project includes a Streamlit application that provides a user-friendly interface for interacting with our AI system.
 
-- Azure OpenAI Service: You need to create an Azure OpenAI service instance and obtain the API key. [start here](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
-- Azure Speech AI Service: Required for speech-to-text conversion. Set up the service and get the subscription key and region. [start here](https://azure.microsoft.com/en-us/products/ai-services/ai-speech)
-- Azure Language Service: Necessary for language understanding and intent recognition.[start here](https://azure.microsoft.com/en-us/products/ai-services/ai-language)
+![alt text](utils/images/image.png)
 
-### Configuration Env variables
+To run the Streamlit app, follow these steps:
 
-We will now use environment variables to store our configuration. This is a more secure practice as it prevents sensitive data from being accidentally committed and pushed to version control systems.
+> Please refer to the 'Prerequisites' section before proceeding.
 
-Create a `.env` file in your project root and add the following variables:
+1. Navigate to the root directory of the project.
 
-```env
-# Your Azure Speech Service subscription key
-SPEECH_KEY=<Your_Azure_Speech_Service_Subscription_Key>
+2. Activate your conda environment. Replace `your_env_name` with the name of your conda environment:
 
-# Your Azure Speech Service region
-SPEECH_REGION=<Your_Azure_Speech_Service_Region>
+    ```sh
+    conda activate your_env_name
+    ```
 
-# Your Azure Machine Learning workspace key
-INTENT_KEY=<Your_Azure_Machine_Learning_Workspace_Key>
+3. Run the Streamlit app with the following command:
 
-# Your Azure OpenAI API key
-OPENAI_KEY=<Your_Azure_OpenAI_API_Key>
+    ```sh
+    streamlit run src/Chatbot.py
+    ```
 
-# The model used for chat
-CHAT_MODEL=<Your_Chat_Model>
+4. Open your web browser and go to `http://localhost:8501` to view the app.
 
-# The model used for completions
-COMPLETION_MODEL=<Your_Completion_Model>
 
-# The base URL for the OpenAI API
-OPENAI_API_BASE=<Your_OpenAI_API_Base_URL>
+## 🔧 Prerequisites
 
-# The version of the OpenAI API
-OPENAI_API_VERSION=<Your_OpenAI_API_Version>
+Please make sure you have met all the prerequisites for this project. A detailed guide on how to set up your environment and get ready to run all the notebooks and code in this repository can be found in the [SETTINGS.md](SETTINGS.md) file. Please follow the instructions there to ensure a smooth exprience.
 
-# Your Azure Storage connection string
-AZURE_STORAGE_CONNECTION_STRING=<Your_Azure_Storage_Connection_String>
-``` 
+## 💼 Contributing:
 
-`SPEECH_KEY` and `SPEECH_REGION` are used for the Azure Speech Service.
-`INTENT_KEY` is used for the Azure Machine Learning workspace.
-`OPENAI_KEY`, `CHAT_MODEL`, `COMPLETION_MODEL`, `OPENAI_API_BASE`, and `OPENAI_API_VERSION` are used for the Azure OpenAI API.
-`AZURE_STORAGE_CONNECTION_STRING` is used for Azure Storage.
+Eager to make significant contributions? Our **[CONTRIBUTING](./CONTRIBUTING.md)** guide is your essential resource! It lays out a clear path.
 
-> 📌 Note Remember not to commit the .env file to your version control system. Add it to your .gitignore file to prevent it from being tracked.
-
-## 🌲 Project Tree Structure
-
-```markdown
-📂 gbbai-azure-ai-template
-┣ 📂 notebooks <- For development, EDA, and quick testing (Jupyter notebooks for analysis and development).
-┣ 📂 src <- Houses main source code for data processing, feature engineering, modeling, inference, and evaluation.
-┣ 📂 test <- Runs unit and integration tests for code validation and QA.
-┣ 📂 utils <- Contains utility functions and shared code used throughout the project.
-┣ 📜 .env.sample <- Sample environment variables file. Replace with your own.
-┣ 📜 .pre-commit-config.yaml <- Config for pre-commit hooks ensuring code quality and consistency.
-┣ 📜 01-workshop.ipynb <- Jupyter notebook for the workshop.
-┣ 📜 CHANGELOG.md <- Logs project changes, updates, and version history.
-┣ 📜 USAGE.md <- Guidelines for using this template.
-┣ 📜 environment.yaml <- Conda environment configuration.
-┣ 📜 Makefile <- Simplifies common development tasks and commands.
-┣ 📜 pyproject.toml <- Configuration file for build system requirements and packaging-related metadata.
-┣ 📜 README.md <- Overview, setup instructions, and usage details of the project.
-┣ 📜 requirements-codequality.txt <- Requirements for code quality tools and libraries.
-┣ 📜 requirements.txt <- General project dependencies.
-```
+- To stay updated with the latest developments and document significant changes to this project, please refer to [CHANGELOG.md](CHANGELOG.md).
